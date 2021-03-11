@@ -1,0 +1,1136 @@
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    /* overflow-x: hidden; */
+}
+.nav{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(../imgs/banner.jpg);
+    background-size: 100% 100%;
+}
+.navone{
+    position: fixed;
+    height: 15vh;
+    z-index: 1;
+    background-image: url(../imgs/banner.jpg);
+    background-size: cover;
+    width: 100%;
+}
+.navone img{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+.navone ul{
+    position: absolute;
+    left: 35%;
+    height: 100%;
+    width: 60%;
+    top: 40%;
+    list-style: none;
+}
+.navone ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navone ul li{
+    float: left;
+    font-size: 20px;
+    margin-left: 40px;
+    color: white;
+    height: 30%;
+    padding-bottom: 10px;
+    font-family: 'roboto', sans-serif;
+    position: relative;
+    overflow: hidden;   
+}
+.navone ul li::after{
+    content: '';
+    height: .8vh;
+    width: 100%;
+    left: -100%;
+    bottom: 0%;
+    position: absolute;
+    background-color: white;
+}
+.navone ul li:hover{
+     cursor: pointer;
+}
+.navone ul li:hover::after{
+    left: 0;
+    transition-duration: .2s;
+}
+.steps{
+    position: absolute;
+    height: 10vh;
+    width: 60%;
+    top: 20%;
+    overflow: hidden;
+    /* background-color: red; */
+    left: 20%;
+}
+.nav h2{
+    position: absolute;
+    top: 33%;
+    left: 31%;
+    font-size: 40px;
+    color:#E75B1E;
+}
+.nav p{
+    position: absolute;
+    top: 45%;
+    left: 16%;
+    font-size: 20px;
+    color:white;
+}
+.nav button{
+    position: absolute;
+    background-color: #E75B1E;
+    color: white;
+    height: 9vh;
+    width: 16%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    top: 60%;
+    left: 39%;
+    transition-duration: .5s;
+}
+.nav button:hover{
+    border: 3px solid #E75B1E;
+    cursor: pointer;
+    background-color: transparent;
+}
+.nav button::after{
+    content: '';
+    position: absolute;
+    height: .5vh;
+    width: 20%;
+    left: 40%;
+    top: 94%;
+    transition-duration: .8s;
+    background-color: #E75B1E;
+}
+.nav button:hover::after{
+    width: 100%;
+    left: 0;
+}
+.nav button:focus{
+    border:2px solid black ;
+}
+.radius{
+    position: absolute;
+    height: 20vh;
+    width: 5%;
+    border-radius: 50px ;
+    border: 2px solid white;
+    top: 74%;
+    left: 44%;
+}
+.circle{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: 33%;
+    top: 10%;
+    animation-name: circle;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes circle{
+    0%{top: 10%;}
+    100%{top: 50%;
+    opacity: 0;}
+}
+.setting{
+    position: fixed;
+    height: 8vh;
+    width: 4%;
+    left: 96%;
+    z-index: 1;
+    top: 30%;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+}
+.iconone{
+    position: absolute;
+    font-size: 30px;
+    left: 23%;
+    top: 20%;
+    transition-duration: 1s;
+    animation: cog 5s linear infinite;
+    color: white;
+}
+.setting:hover .iconone{
+    cursor: pointer;
+    color: #E75B1E;
+}
+@keyframes cog{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+
+}
+.steps h1{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 60px;
+    color:white;
+}
+
+.list{
+    position: absolute;
+    color:#E75B1E;
+    left: 61%;
+    top: 30%;
+    /* border: 2px solid white; */
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 10vh;
+    list-style: none;
+    text-decoration: none;
+    animation-name: ups;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 21s;
+    white-space: nowrap;
+    /* animation-delay: 2s; */
+}
+@keyframes ups{
+    0%{top:20% ;}
+    50%{top:-60% ;}
+    100%{top:-200% ;}
+}
+.list li{
+    width: 16ch;
+    white-space: nowrap;
+    /* border: 2px solid blue; */
+animation: name 5s infinite alternate steps(16);
+overflow: hidden;
+}
+@keyframes name{
+    0%{width: 0ch;}
+    100%{width: 16ch;}
+}
+.about-us{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+.info{
+    position: absolute;
+    height: 80%;
+    width: 50%;
+    /* background-color: #fff; */
+    top: 12%;
+    left: 5%;
+}
+.info h1{
+    position: absolute;
+    /* top: 13%; */
+    left: 5%;
+    color: #E75B1E;
+}
+.info h2{
+    position: absolute;
+    top: 13%;
+    font-size: 20px;
+    left: 5%;
+    /* color: #E75B1E; */
+}
+.info p{
+    position: absolute;
+    top: 23%;
+    line-height: 5vh;
+    font-size: 17px;
+    left: 5%;
+    color: grey;
+}
+.aboutimg{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: 57%;
+    top: 15%;
+    border-radius: 400px;
+    border: 10px solid white;
+    background-image: url(../imgs/about-main.jpg);
+    background-size: 100% 100%;
+}
+.aboutimgone{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 79%;
+    top: 15%;
+    border-radius: 400px;
+    border: 10px solid white;
+    background-image: url(../imgs/about-inset.jpg);
+    background-size: 100% 100%;
+}
+.special{
+    position: relative;
+    height: 120vh;
+    overflow: hidden;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../imgs/special_menu_bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.special h1{
+    position: absolute;
+    top:10%;
+    left: 40%;
+    color: #E75B1E;
+}
+.special p{
+    position: absolute;
+    top:18%;
+    overflow: hidden;
+    text-align: center;
+    left: 20%;
+    line-height: 4vh;
+    color: white;
+}
+.slider{
+    position: absolute;
+    height: 80vh;
+    width: 90%;
+    left: 5%;
+    top: 30%;
+    /* border: 2px solid green; */
+}
+ .boxone{
+    position: absolute;
+    height: 93%;
+    width: 100%;
+    transition-duration: .5s;
+    /* border: 2px solid black; */
+}
+.dishone{
+    position: absolute;
+    height: 70vh;
+    width: 25%;
+    border: 4px solid white;
+    left: 7%;
+    background-image: url(../imgs/special-menu-1.jpg);
+    background-size: 100% 100%;
+}
+.dishtwo{
+    left: 37%;
+    background-image: url(../imgs/special-menu-2.jpg);
+}
+.dishthree{
+    left: 67%;
+    background-image: url(../imgs/special-menu-3.jpg);
+}
+.infobox{
+    position: absolute;
+    height: 20vh;
+    width: 90%;
+    top: 60%;
+    left: 5%;
+    border: 3px solid white;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: .5s;
+
+}
+.dishone:hover .infobox{
+    transform: scale(1);
+    cursor: pointer;
+}
+.infobox h2{
+    color: white;
+    text-align: center;
+}
+.infobox>p{
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 2%;
+    text-align: center;
+}
+.line{
+    position: absolute;
+    height: .5vh;
+    top: 30%;
+    left: 9%;
+    background-color: #fff;
+    width: 80%;
+}
+.boxtwo{
+    left: 110%;
+}
+.b1{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+}
+.b2{
+    left: 53%;
+}
+input:checked+.la2+.boxtwo{
+    left: 0%;
+}
+.menu{
+    position: relative;
+    height: 130vh;
+    width: 100%;
+}
+.menu h1{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    color: #E75B1E;
+}
+.menu p{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    line-height: 5vh;
+    text-align: center;
+}
+.hh{
+    position: relative;
+    width: 100%;
+    top: 30%;
+    overflow: hidden;
+    height:91vh;
+    /* background-color: green; */
+}
+.la3 h2{
+    position: absolute;
+    left:25%;
+    top: 10%;
+    color: black;
+}
+.la3 .i{
+    position: absolute;
+    font-size:30px;
+    top:53%;
+    /* border: ; */
+    color: black;
+    left:45%;
+} 
+.la3{
+	position: relative;
+	top: 0%;
+    left: 8%;
+    /* border: 2px solid black; */
+    color: white;
+    display: inline-block;
+    font-family: 'roboto', sans-serif;
+	/* background-color: #E75B1E; */
+    width: 20vw;
+	height: 25vh;
+}
+.sliderone{
+    position: relative;
+    height: 64.5vh;
+    width: 400%;
+    transition-duration: 1s;
+    /* background-color: yellow; */
+}
+.pageone{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    /* background-color: cyan; */
+    float: left;
+}
+.pagetwo{
+    /* background-color: darkblue; */
+}
+.pagethree{
+    /* background-color: blue; */
+}
+.pagefour{
+    /* background-color: red; */
+}
+.breadone{
+    position: absolute;
+    height: 20vh;
+    width: 45%;
+    left: 3%;
+    top: 5%;
+    /* border: 2px solid green; */
+}
+.breadone h2{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: #E75B1E;
+}
+.breadone>p{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    text-align: left;
+    line-height: 3vh;
+    /* color: #E75B1E; */
+}
+.circleone{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-image: url(../imgs/featured-image-01.jpg);
+    background-size: 100% 100%;
+    left: 5%;
+    top: 10%;
+}
+.circletwo{
+    left: 80%;
+    border: 1px solid #E75B1E;
+    background-color: white;
+    background-image: unset;
+}
+.circletwo h1{
+    position: absolute;
+    top:30%;
+    left:17%;
+    color: black;
+}
+.breadtwo{
+    top: 50%;
+}
+.breadthree{
+    left: 51%;
+}
+.b1:checked+label~.sliderone{
+    left: 0%;
+}
+.b2:checked+label~.sliderone{
+    left: -100%;
+}
+.b3:checked+label~.sliderone{
+    left: -200%;
+}
+.b4:checked+label~.sliderone{
+    left: -300%;
+}
+input:checked+label{
+    background-color: #E75B1E;
+}
+.our-team{
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../imgs/team_bg.jpg);
+    background-size: 100% 100%;
+}
+.our-team h1{
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 43%;
+}
+.our-team p{
+    position: absolute;
+    color: white;
+    top: 18%;
+    left: 13%;
+    text-align: center;
+    line-height: 4vh;
+}
+.chef1{
+    position: absolute;
+    height: 80vh;
+    width: 25%;
+    top:30%;
+    left: 5%;
+    background-color: white;
+}
+.chef1:hover .innerchef{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../imgs/staff-01.jpg);
+    transition-duration: 1s;
+}
+.chef2:hover .innerchef{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../imgs/staff-02.jpg);
+    transition-duration: 1s;
+}
+.chef3:hover .innerchef{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../imgs/staff-03.jpg);
+    transition-duration: 1s;
+}
+.chef1:hover .innerbio{
+    background-color: #E75B1E;
+    transition-duration: 1s;
+
+}
+.chef2{
+    left: 38%;
+}
+.chef2>.innerchef{
+    background-image: url(../imgs/staff-02.jpg);
+}
+.chef3{
+    left: 70%;
+}
+.chef3>.innerchef{
+    background-image: url(../imgs/staff-03.jpg);
+}
+.innerchef{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-image: url(../imgs/staff-01.jpg);
+    background-size: 100% 100%;
+}
+.innerbio{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 60%;
+}
+.innerbio h1{
+    position: absolute;
+    left:20%;
+    top: 0;
+    left: 25%;
+    color: black;
+    text-align: center;
+}
+.innerbio p{
+    position: absolute;
+    left:0%;
+    line-height: 3vh;
+    color: black;
+    text-align: center;
+}
+.fb{
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    top: 75%;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 100px;
+    left: 25%;
+}
+.t{
+    left: 43%;
+}
+.in{
+    left: 63%;
+}
+.gallery{
+    position: relative;
+    height: 255vh;
+    width: 100%;
+}
+.gallery h1{
+    position: absolute;
+    top: 5%;
+    left:40%;
+    color: #E75B1E;
+}
+.gallery p{
+    position: absolute;
+    top:9%;
+    left:26%;
+    text-align: center;
+    /* color: #E75B1E; */
+}
+.picone{
+    position: absolute;
+    height: 50vh;
+    width: 55%;
+    left: 5%;
+    top: 13%;
+    background-image: url(../imgs/gallery_01.jpg);
+    background-size: 100% 100%;
+}
+.pictwo{
+    width: 34%;
+    left: 61%;
+    background-image: url(../imgs/gallery_02.jpg);
+}
+.picthree{
+    width: 27%;
+    left: 5%;
+    background-image: url(../imgs/gallery_03.jpg);
+    top:85vh ;
+}
+.picfour{
+    width: 27%;
+    background-image: url(../imgs/gallery_04.jpg);
+    left: 33%;
+    top:85vh ;
+
+}
+.picfive{
+    width: 34%;
+    background-image: url(../imgs/gallery_05.jpg);
+    left: 61%;
+    top:85vh ;
+}
+.picsix{
+    top: 137vh;
+    background-image: url(../imgs/gallery_06.jpg);
+}
+.picseven{
+    top: 137vh;
+    background-image: url(../imgs/gallery_07.jpg);
+    width: 34%;
+    left: 61%;
+}
+.piceight{
+    width: 27%;
+    background-image: url(../imgs/gallery_08.jpg);
+    left: 5%;
+    top:190vh ;
+}
+.picnine{
+    width: 27%;
+    background-image: url(../imgs/gallery_09.jpg);
+    left: 33%;
+    top:190vh ;
+
+}
+.picten{
+    width: 34%;
+    background-image: url(../imgs/gallery_10.jpg);
+    left: 61%;
+    top:190vh ;
+}
+.picone:hover{
+    /* background-color: #E75B1E; */
+    opacity: .6;
+    /* background-color: rgba(231, 91, 30, .7); */
+    cursor: pointer;
+}
+.blog{
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../imgs/blog_bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.blog h1{
+    position: absolute;
+    top: 5%;
+    left:45%;
+    color: #fff;
+}
+.blogone{
+    position: absolute;
+    height: 40vh;
+    width: 35%;
+    top: 15%;
+    left: 12%;
+    background-color: #fff;
+}
+.blogone img{
+    height: 100%;
+    width: 55%;
+}
+.blogtwo{
+    left: 53%;
+}
+.blogthree{
+    top: 60vh;
+}
+.blogfour{
+    top: 60vh;
+    left: 53%;
+}
+.lineone{
+    position: absolute;
+    left: 57%;
+    width: 40%;
+    top: 25%;
+}
+.heading{
+    position: absolute;
+    top: 10%;
+    left: 59%;
+    color: lightgrey;
+}
+.headingone{
+    left: 55%;
+    color: black;
+    line-height: 5vh;
+    top: 34%;
+    text-align: center;
+}
+.linetwo{
+    top: 65%;
+}
+.headingtwo{
+    top: 75%;
+    left: 65%;
+    font-size: 15px;
+}
+.blog button{
+    position: absolute;
+    top: 89%;
+    background-color: #E75B1E;
+    height: 8.5vh;
+    width: 15%;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    left:43%;
+    transition-duration: .5s;
+}
+.blog button:hover{
+    border: 3px solid #E75B1E;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.blog button::after{
+    content: '';
+    position: absolute;
+    height: .5vh;
+    width: 20%;
+    left: 40%;
+    top: 94%;
+    transition-duration: .8s;
+    background-color: #E75B1E;
+}
+.blog button:hover::after{
+    width: 100%;
+    left: 0;
+}
+.blog button:focus{
+    border:2px solid black ;
+}
+.pricing{
+    position: relative;
+    height: 150vh;
+    width: 100%;
+    background-size: 100% 100%;
+}
+.pricing h1{
+    position: absolute;
+    top: 5%;
+    left:45%;
+    color: #E75B1E;
+}
+.pricing p{
+    position: absolute;
+    top:12%;
+    left:15%;
+    line-height: 4vh;
+    text-align: center;
+}
+.basicone{
+    position: absolute;
+    height: 90vh;
+    width: 25%;
+    top: 25%;
+    left: 10%;
+    transition-duration: .5s;
+    border-radius: 7px;
+    border: 2px solid #E75B1E;
+}
+.basictwo{
+    left: 37.5%;
+}
+.basicthree{
+    left: 65%;
+}
+.basicone:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 2px 2px 8px 1px gray;
+}
+.innerbasic{
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    background-color: #E75B1E;
+}
+.innerbasic img{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 37%;
+    top: 8%;
+}
+.innerbasic h2{
+    position: absolute;
+    top: 72%;
+    color: white;
+    left:38%
+}
+.month{
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: 20vh;
+    background-color: lightgrey;
+}
+.month h1{
+    position: absolute;
+    left: 27%;
+    top: 30%;
+    color: black;
+}
+.ulone{
+    position: absolute;
+    top: 40%;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+}
+.ulone li{
+    height: 5vh;
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+.basicone button{
+    position: absolute;
+    background-color: #E75B1E;
+    height: 9vh;
+    width: 90%;
+    left: 5%;
+    font-size: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    top: 89%;
+}
+.reservation{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.reservation h1{
+    position: absolute;
+    top: 0%;
+    left:42%;
+    color: #E75B1E;
+}
+.reservation h3{
+    position: absolute;
+    top: 12%;
+    left:44.5%;
+    color: black;
+}
+.reservation h4{
+    position: absolute;
+    top: 18%;
+    left:35%;
+    color: grey;
+}
+.formone{
+    position: absolute;
+    height: 10vh;
+    width: 30%;
+    left: 15%;
+    background-color: #f3f3f3;
+    top: 30%;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px dotted grey;
+}
+.formtwo{
+    left: 55%;
+}
+.formthree{
+    top:44% ;
+}
+.formfour{
+    top: 44%;
+    left: 55%;
+    width: 31%;
+}
+.formfive{
+    top:58% ;
+}
+.formsix{
+    top:58% ;
+    left: 55%;
+}
+.formseven{
+    top: 72%;
+    width: 31%;
+}
+.formeight{
+    top: 72%;
+    left: 55%;
+    width: 31%;
+}
+.reservation button{
+    position: absolute;
+    top: 89%;
+    background-color:#E75B1E;
+    height: 8.5vh;
+    width: 15%;
+    color: white;
+    font-size: 20px;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    left:43%;
+    transition-duration: .5s;
+}
+.reservation button:hover{
+    border: 3px solid #E75B1E;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+}
+.reservation button::after{
+    content: '';
+    position: absolute;
+    height: .5vh;
+    width: 20%;
+    left: 40%;
+    top: 94%;
+    transition-duration: .8s;
+    background-color: #E75B1E;
+}
+.reservation button:hover::after{
+    width: 100%;
+    left: 0;
+}
+.reservation button:focus{
+    border:2px solid black ;
+}
+.newsletter{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../imgs/newsletter-bg.jpg);
+    background-attachment: fixed;
+}
+.newsletter h1{
+    position: absolute;
+    top: 30%;
+    left:42%;
+    color: #fff;   
+}
+.newsletter p{
+    position: absolute;
+    top: 45%;
+    left:32.5%;
+    color: #fff;   
+}
+.newsletter input{
+    position: absolute;
+    top: 55%;
+    width: 50%;
+    left: 25%;
+    color: grey;
+    height: 8.5vh;
+    border: 2px dotted grey;
+}
+.mail{
+    position: absolute;
+    height: 7.5vh;
+    width: 4%;
+    top: 55.8%;
+    border: 2px solid #E75B1E;
+    left: 70.9%;
+    transition-duration: 1s;
+    background-color: #E75B1E;
+}
+.mail:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+.plane{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    top:20%;
+    left:20%;
+    transition-duration: 1s;
+}
+.mail:hover .plane{
+   color: #E75B1E; 
+}
+.funday{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(../imgs/special_menu_bg.jpg);
+}
+.funday img{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+.fundayone{
+    position: absolute;
+    height: 30vh;
+    width: 23%;
+    left: 5%;
+    /* border: 2px solid white; */
+    top: 45%;
+}
+.fundayone h2{
+    color: #E75B1E;
+}
+.fundayone p{
+    color: white;
+    position: absolute;
+    line-height: 5vh;
+    top: 25%;
+}
+.icons{
+    position: absolute;
+    font-size: 25px;
+    top: 80%;
+    color: white;
+    left: 3%;
+    transition-duration: 1s;
+}
+.icons:hover{
+    color: #E75B1E;
+    cursor: pointer;
+}
+.ione{
+    left: 20%;
+}
+.itwo{
+    left: 40%;
+}
+.ithree{
+    left: 60%;
+}
+.fundaytwo{
+    left: 35%;
+    width: 18%;
+}
+.fundaythree{
+    left: 58%;
+    width: 20%;
+}
+.fundayfour{
+    left: 80%;
+    width: 15%;
+}
+.footer{
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    background-color: #E75B1E;
+}
+.footer p{
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    font-size: 25px;
+    color: white;
+}
